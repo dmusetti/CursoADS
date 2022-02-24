@@ -1,0 +1,30 @@
+﻿@model IEnumerable<AppWeb1.Models.Produto>
+
+@{
+   ViewBag.Title = "Index";
+
+}
+<div class="container">
+
+</div>
+
+<div class="row">
+   @foreach (var item in Model)
+   {
+      <div class="col-4">
+         <div class="card">
+            <div class="card-header bg-primary">
+               @Html.DisplayFor(modelItem => item.Descricao)
+            </div>
+            <div class="card-body">
+               @Html.DisplayFor(modelItem => item.MsgPromo)
+            </div>
+            <div class="card-footer">
+               <h2>@ViewBag.UsuarioLogado</h2>
+            </div>
+         </div>
+      </div>
+   }
+</div>
+
+

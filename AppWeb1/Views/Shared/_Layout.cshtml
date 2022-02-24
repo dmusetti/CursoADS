@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>@ViewBag.Title - Aplicação 3o ADS</title>
+   <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+   <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="/Tipo/Index">Cadastro de tipos</a>
+            </li>
+
+            <li class="nav-item active">
+               <a class="nav-link" href="/Home/Index">Home <span class="sr-only">(current)</span></a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <div class="container body-content">
+      @RenderBody()
+      <hr />
+      <footer>
+         <p>&copy; @DateTime.Now.Year - 4o ADS UNIFAAT 2021</p>
+      </footer>
+   </div>
+
+
+
+</body>
+</html>
